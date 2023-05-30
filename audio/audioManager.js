@@ -1,12 +1,12 @@
-const hardDrop = new Audio('./audio/hardDrop.mp3');
-const move = new Audio('./audio/move.mp3');
-const rotate = new Audio('./audio/rotate.mp3');
-const theme = new Audio('./audio/theme.mp3');
-const hold = new Audio('./audio/hold.mp3');
-const gameOver = new Audio('./audio/gameOver.mp3');
-const lockPiece = new Audio('./audio/lockPiece.mp3');
-const lineClear = new Audio('./audio/lineClear.mp3');
-const tetrisClear = new Audio('./audio/tetrisClear.mp3');
+const hardDrop = new Audio('/audio/hardDrop.mp3');
+const move = new Audio('/audio/move.mp3');
+const rotate = new Audio('/audio/rotate.mp3');
+const theme = new Audio('/audio/theme.mp3');
+const hold = new Audio('/audio/hold.mp3');
+const gameOver = new Audio('/audio/gameOver.mp3');
+const lockPiece = new Audio('/audio/lockPiece.mp3');
+const lineClear = new Audio('/audio/lineClear.mp3');
+const tetrisClear = new Audio('/audio/tetrisClear.mp3');
 
 let masterVolume = 1;
 const toggleSoundBtn = document.getElementById('toggleSoundBtn');
