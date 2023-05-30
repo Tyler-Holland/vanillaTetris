@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tetris</title>
+</head>
+
+<body>
+  <div id="app">
+    <div id="tetrisMaster">
+      <div id="mainMenu" class="positionAbsolute visible rainbow-box">
+        <img id='mainMenuLogo' src='/overlays/tetrisLogo.png'>
+        <div id="mainMenuShadow" class="positionAbsolute"></div>
+        <div id="newGameBtn" class="mainMenuBtn rainbow-box" data-start-new-game="startNewGame">Play</div>
+      </div>
+
+      <div id="playAreaMaster" class="hidden">
+
+        <div id="game" class="rainbow-box">
+
+          <div id="gamePlayArea">
+
+            <div id="heldPiecesMaster">
+              <img id="heldPiecesOverlay" src="./overlays/heldPiece.png">
+              <div class="positionAbsolute">
+                <div class="shadowOverlay hidden"></div>
+                <div id="heldPiecesDisplay"></div>
+              </div>
+            </div>
+
+            <div id="playAreaAndOverlay">
+
+              <img id="playAreaOverlay" src="./overlays/playArea.png">
+
+              <div id="gameContainer">
+                <div id="gameOverlay" class="positionAbsolute">
+                  <div id="gameOverlayText" class="rainbow-box">Game Paused</div>
+                  <div class="gameOverlayBtn rainbow-box" id="resumeGameBtn">Resume</div>
+                  <div class="gameOverlayBtn rainbow-box" data-goto="mainMenu">Main Menu</div>
+                  <div class="gameOverlayBtn rainbow-box" data-start-new-game="startNewGame">New Game</div>
+                </div>
+
+                <canvas id="gridOverlay" class="positionAbsolute"></canvas>
+                <canvas id="playArea"></canvas>
+              </div>
+
+            </div>
+
+            <div id="upcomingPiecesMaster">
+              <img id="upcomingPiecesOverlay" src="./overlays/upcomingPieces.png">
+              <div class="positionRelative">
+                <div class="shadowOverlay hidden"></div>
+                <div id="upcomingPiecesDisplay"></div>
+              </div>
+            </div>
+
+            <div id="gameInfoWindow">
+              <img id="gameInfoOverlay" src="./overlays/gameInfo.png">
+              <div id="gameInfoDisplay">
+                <div class="gameInfoItems"><span id="gameInfoScore">0</span></div>
+                <div class="gameInfoItems"><span id="gameInfoLevel">0</span></div>
+                <div class="gameInfoItems"><span id="gameInfoLinesCleared">0</span></div>
+              </div>
+            </div>
+
+            <div id="toggleSoundBtn" class=" unmuted rainbow-box">Toggle Sound</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
