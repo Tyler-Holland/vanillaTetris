@@ -1,4 +1,4 @@
-const hardDrop = new Audio('/audio/hardDrop.mp3');
+let hardDrop;
 const move = new Audio('/audio/move.mp3');
 const rotate = new Audio('/audio/rotate.mp3');
 const theme = new Audio('/audio/theme.mp3');
@@ -7,6 +7,15 @@ const gameOver = new Audio('/audio/gameOver.mp3');
 const lockPiece = new Audio('/audio/lockPiece.mp3');
 const lineClear = new Audio('/audio/lineClear.mp3');
 const tetrisClear = new Audio('/audio/tetrisClear.mp3');
+
+// onload = () => {
+//     hardDrop = new Audio('/audio/hardDrop.mp3');
+
+//     console.log(hardDrop);
+// }
+const hardDropAudio = document.getElementById('hardDropAudio');
+// hardDropAudio.play();
+
 
 let masterVolume = 1;
 const toggleSoundBtn = document.getElementById('toggleSoundBtn');
@@ -48,9 +57,12 @@ export function playRotate() {
 }
 
 export function playHardDrop() {
-    hardDrop.currentTime = 0;
-    hardDrop.volume = 0.7 * masterVolume;
-    hardDrop.play();
+    // hardDrop.currentTime = 0;
+    // hardDrop.volume = 0.7 * masterVolume;
+    // hardDrop.play();
+    hardDropAudio.currentTime = 0;
+    hardDropAudio.volume = 0.7 * masterVolume; 
+    hardDropAudio.play();
 }
 
 export function playHold() {
