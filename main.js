@@ -6,7 +6,7 @@ import * as helper from './js/helpers.js';
 import * as boardState from './gameData/boardState.js';
 import * as gameState from './gameData/gameState.js';
 import * as defaults from './gameData/defaults.js';
-import * as sfx from '/audio/audioManager.js';
+import * as sfx from './js/audioManager.js';
 
 const rAF = window.requestAnimationFrame;
 let gameIsRunning = false;

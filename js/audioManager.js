@@ -1,21 +1,12 @@
-let hardDrop;
-const move = new Audio('/audio/move.mp3');
-const rotate = new Audio('/audio/rotate.mp3');
-const theme = new Audio('/audio/theme.mp3');
-const hold = new Audio('/audio/hold.mp3');
-const gameOver = new Audio('/audio/gameOver.mp3');
-const lockPiece = new Audio('/audio/lockPiece.mp3');
-const lineClear = new Audio('/audio/lineClear.mp3');
-const tetrisClear = new Audio('/audio/tetrisClear.mp3');
-
-// onload = () => {
-//     hardDrop = new Audio('/audio/hardDrop.mp3');
-
-//     console.log(hardDrop);
-// }
-const hardDropAudio = document.getElementById('hardDropAudio');
-// hardDropAudio.play();
-
+const hardDrop = new Audio('/assets/audio/hardDrop.mp3');
+const move = new Audio('/assets/audio/move.mp3');
+const rotate = new Audio('/assets/audio/rotate.mp3');
+const theme = new Audio('/assets/audio/theme.mp3');
+const hold = new Audio('/assets/audio/hold.mp3');
+const gameOver = new Audio('/assets/audio/gameOver.mp3');
+const lockPiece = new Audio('/assets/audio/lockPiece.mp3');
+const lineClear = new Audio('/assets/audio/lineClear.mp3');
+const tetrisClear = new Audio('/assets/audio/tetrisClear.mp3');
 
 let masterVolume = 1;
 const toggleSoundBtn = document.getElementById('toggleSoundBtn');
@@ -57,12 +48,9 @@ export function playRotate() {
 }
 
 export function playHardDrop() {
-    // hardDrop.currentTime = 0;
-    // hardDrop.volume = 0.7 * masterVolume;
-    // hardDrop.play();
-    hardDropAudio.currentTime = 0;
-    hardDropAudio.volume = 0.7 * masterVolume; 
-    hardDropAudio.play();
+    hardDrop.currentTime = 0;
+    hardDrop.volume = 0.7 * masterVolume;
+    hardDrop.play();
 }
 
 export function playHold() {

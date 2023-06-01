@@ -59,7 +59,7 @@ body {
 }
 
 #mainMenu {
-  background-image: url('/overlays/mainMenu.jpg');
+  background-image: url('/assets/images/other/mainMenuBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;

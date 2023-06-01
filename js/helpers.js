@@ -5,7 +5,7 @@ import * as bsl from '../gameData/boardStateLegend.js';
 import * as boardState from '../gameData/boardState.js';
 import * as gameState from '../gameData/gameState.js';
 import * as defaults from '../gameData/defaults.js';
-import * as sfx from '../audio/audioManager.js';
+import * as sfx from './audioManager.js';
 
 export function setupNewGame() {
     sfx.resetTheme();
